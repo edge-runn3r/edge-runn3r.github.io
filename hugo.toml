@@ -1,4 +1,4 @@
-baseurl      = "localhost"
+baseurl      = "https://edge-runn3r.github.io/"
 title        = "My Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
