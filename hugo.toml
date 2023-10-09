@@ -121,8 +121,7 @@ disableHugoGeneratorInject = false
 
     topText = []
     bottomText = [
-      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-      "Made with &#10084";
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a>", "Made with &#10084",
     ]
 
   # Colors for favicons
