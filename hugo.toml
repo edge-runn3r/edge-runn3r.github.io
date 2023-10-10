@@ -1,4 +1,4 @@
-baseURL = "edgerunn3r.com"
+baseURL = "https://edgerunn3r.com"
 title   = "edgerunn3r"
 languageCode = "en-us"
 theme = "hello-friend-ng"
@@ -158,7 +158,7 @@ disableHugoGeneratorInject = false
   # Uncomment this if you want a portrait on your start page
   
    [params.portrait]
-     path     = "/img/image.jpg"
+     path     = "/images/test.png"
      alt      = "Portrait"
      maxWidth = "50px"
 
