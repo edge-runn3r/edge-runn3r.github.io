@@ -1,19 +1,22 @@
 +++
 title = "About"
-date = "2014-04-09"
+date = "2023-13-10"
 aliases = ["about-us","about-hugo","contact"]
 [ author ]
-  name = "Hugo Authors"
+  name = "mayed"
 +++
 
-Hugo is the **world’s fastest framework for building websites**. It is written in Go.
+#### Welcome to my corner of the digital universe!
 
-It makes use of a variety of open source projects including:
+I'm edgerunn3r, and I am thrilled to have you here. This blog is the platform where I dive deep into the intriguing world of security, testing, and share my passion for all things technology. 
 
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+I also explore my personal side projects, offering a holistic view of my technical journey.
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+#### Why This Blog?
+
+The inspiration behind this blog is simple.
+
+To provide a space where I can document, share, and discuss my adventures in security, testing, and my personal side projects. 
+Whether I'm uncovering vulnerabilities, dissecting the latest cyber threats, improving software quality, or innovating in my personal tech projects.
+
+Thank you for visiting!

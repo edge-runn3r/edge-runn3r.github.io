@@ -60,8 +60,7 @@ disableHugoGeneratorInject = false
   images = [""]
 
   # Home subtitle of the index page.
-  #
-  homeSubtitle = "Hello Friend NG"
+  # homeSubtitle = "Before it all goes dark..."
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -158,9 +157,9 @@ disableHugoGeneratorInject = false
   # Uncomment this if you want a portrait on your start page
   
   [params.portrait]
-    path     = "/static/img/test.png"
+    path     = "/img/david.jpg"
     alt      = "Portrait"
-    maxWidth = "50px"
+    maxWidth = "300px"
 
   # Social icons
   [[params.social]]
@@ -173,35 +172,35 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "github"
-    url  = "https://github.com/"
+    url  = "https://github.com/edge-runn3r"
 
   [[params.social]]
     name = "linkedin"
     url  = "https://www.linkedin.com/"
 
-  [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
+  # [[params.social]]
+  # name = "stackoverflow"
+  # url  = "https://www.stackoverflow.com/"
 
-[languages]
+ [languages]
   [languages.en]
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   [languages.en.params]
     subtitle  = "Hello Friend NG Theme"
 
-  [languages.fr]
-    weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  [languages.fr.params]
-    subtitle  = "Hello Friend NG Theme"
+ # [languages.fr]
+ #  weight    = 2
+ #  copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+ # [languages.fr.params]
+ #  subtitle  = "Hello Friend NG Theme"
 
 [menu]
   [[menu.main]]
     identifier = "about"
-    name       = "About"
+    name       = "about"
     url        = "about/"
   [[menu.main]]
     identifier = "posts"
-    name       = "Posts"
+    name       = "posts"
     url        = "posts/"   
