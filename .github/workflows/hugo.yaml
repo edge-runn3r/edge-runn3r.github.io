@@ -18,12 +18,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.148.0'
+      - name: Install Hugo
+        run: |
+          wget -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.148.0/hugo_extended_0.148.0_linux-amd64.deb
+          sudo dpkg -i hugo.deb
 
       - name: Build
         run: hugo --minify
@@ -34,11 +35,8 @@ jobs:
           path: ./public
 
   deploy:
-    runs-on: ubuntu-latest
     needs: build
-    permissions:
-      pages: write
-      id-token: write
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
     steps:
