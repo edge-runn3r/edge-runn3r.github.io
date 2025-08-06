@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on edgerunn3r</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://mayed.ae/posts/</link>
     <description>Recent content in Posts on edgerunn3r</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 13 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mayed.ae/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTB Machine (Lame)</title>
-      <link>http://localhost:1313/posts/2023/10/htb-machine-lame/</link>
+      <link>https://mayed.ae/posts/2023/10/htb-machine-lame/</link>
       <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/10/htb-machine-lame/</guid>
+      <guid>https://mayed.ae/posts/2023/10/htb-machine-lame/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;h4 id=&#34;machine-categories&#34;&gt;Machine Categories&lt;/h4&gt;&#xA;&lt;p&gt;Network&lt;br&gt;&#xA;Vulnerability Assessment&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;machine-description&#34;&gt;Machine Description&lt;/h2&gt;&#xA;&lt;p&gt;Lame is a beginner level machine, requiring only one exploit to obtain root access. It was the first machine published on Hack The Box and was often the first machine for new users prior to its retirement.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h4 id=&#34;reconnaissance&#34;&gt;Reconnaissance:&lt;/h4&gt;&#xA;&lt;p&gt;Commence the assessment by conducting reconnaissance to gather valuable information about the target machine.&lt;/p&gt;&#xA;&lt;p&gt;Use the Nmap tool to perform a comprehensive scan of the target machine with the following command: &lt;code&gt;nmap -sC -sV &amp;lt;target ip&amp;gt;&lt;/code&gt;&lt;/p&gt;</description>
     </item>
   </channel>

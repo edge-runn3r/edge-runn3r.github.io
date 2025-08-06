@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/2023/10/htb-machine-lame/</loc>
+    <loc>https://mayed.ae/posts/2023/10/htb-machine-lame/</loc>
     <lastmod>2023-10-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://mayed.ae/</loc>
+    <lastmod>2025-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mayed.ae/posts/</loc>
+    <lastmod>2025-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mayed.ae/about/</loc>
     <lastmod>2023-10-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://mayed.ae/series/hugo-101/</loc>
     <lastmod>2023-10-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/hugo-101/</loc>
+    <loc>https://mayed.ae/series/</loc>
     <lastmod>2023-10-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2023-10-13T00:00:00+00:00</lastmod>
+    <loc>https://mayed.ae/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
-    <lastmod>2023-10-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://mayed.ae/tags/</loc>
   </url>
 </urlset>
