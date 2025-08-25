@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XDR Story Parser - Process Tree Visualizer</title>
+    <title>XDR Story Parser — mayed.ae</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="description" content="Visualize Microsoft Defender XDR process trees and security events">
     <meta name="author" content="XDR Story Parser">
@@ -182,12 +182,34 @@
                 </div>
             </section>
         </main>
-        
-        <footer class="footer">
-            <p>Made with ❤️ and bad prompts by <a href="https://cloudbrothers.info/en/">Fabian Bader</a></p>
-        </footer>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+<!-- Cleanup injected by mayed.ae -->
+<script>
+(function () {
+  // Remove credit/footer nodes containing "made with" or a heart
+  const looksLikeCredit = (el) => /made with|♥|heart/i.test(el.textContent || "");
+  document.querySelectorAll('footer, .footer, .credits, [class*="credit"], [id*="credit"]').forEach(el => {
+    if (looksLikeCredit(el)) el.remove();
+  });
+
+  // Remove any elements that mention "bad prompt(s)"
+  const all = document.querySelectorAll('section, article, div, details, summary, p, li, h1, h2, h3, h4, [id], [class]');
+  all.forEach(el => {
+    if (/bad\s*prompts?/i.test(el.textContent || "")) el.remove();
+  });
+
+  // Optional: minimal back link to your site (delete if you don't want it)
+  const bar = document.createElement('div');
+  bar.style.cssText = 'padding:10px 14px;border-bottom:1px solid #e5e7eb;margin-bottom:12px;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu';
+  bar.innerHTML = '<a href="/" style="text-decoration:none">← Back to mayed.ae</a>';
+  document.body.prepend(bar);
+
+  // Optional: unify font
+  document.head.insertAdjacentHTML('beforeend',
+    '<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}</style>');
+})();
+</script>
