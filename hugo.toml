@@ -208,3 +208,8 @@ disableHugoGeneratorInject = false
     name = "Password Gen"
     url = "/password-generator/"
     weight = 50
+  
+  [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
