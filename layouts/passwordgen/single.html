@@ -1,0 +1,67 @@
+{{ define "main" }}
+<main id="main" class="prose max-w-xl mx-auto p-4">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Description }}</p>
+
+  <form id="pw-options" class="space-y-3">
+    <label>
+      Length:
+      <input type="number" id="length" min="4" max="64" value="12" class="border p-1">
+    </label><br>
+
+    <label><input type="checkbox" id="upper" checked> Include Uppercase (A-Z)</label><br>
+    <label><input type="checkbox" id="lower" checked> Include Lowercase (a-z)</label><br>
+    <label><input type="checkbox" id="numbers" checked> Include Numbers (0-9)</label><br>
+    <label><input type="checkbox" id="symbols" checked> Include Symbols (!@#$...)</label><br>
+
+    <button type="button" id="generate" class="border rounded px-3 py-1">Generate</button>
+  </form>
+
+  <div class="mt-4">
+    <label for="output">Generated Password:</label><br>
+    <input type="text" id="output" readonly class="w-full border p-2 font-mono">
+    <button type="button" id="copy" class="mt-2 border rounded px-3 py-1">Copy</button>
+  </div>
+</main>
+
+<script>
+(function(){
+  const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const lower = "abcdefghijklmnopqrstuvwxyz";
+  const numbers = "0123456789";
+  const symbols = "!@#$%^&*()_+-=[]{}|;:,.<>?";
+
+  function generatePassword(opts) {
+    let chars = "";
+    if (opts.upper) chars += upper;
+    if (opts.lower) chars += lower;
+    if (opts.numbers) chars += numbers;
+    if (opts.symbols) chars += symbols;
+    if (!chars) return "";
+
+    let pw = "";
+    for (let i=0; i<opts.length; i++) {
+      pw += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return pw;
+  }
+
+  document.getElementById("generate").onclick = () => {
+    const opts = {
+      length: parseInt(document.getElementById("length").value, 10) || 12,
+      upper: document.getElementById("upper").checked,
+      lower: document.getElementById("lower").checked,
+      numbers: document.getElementById("numbers").checked,
+      symbols: document.getElementById("symbols").checked,
+    };
+    document.getElementById("output").value = generatePassword(opts);
+  };
+
+  document.getElementById("copy").onclick = () => {
+    const out = document.getElementById("output");
+    out.select();
+    document.execCommand("copy");
+  };
+})();
+</script>
+{{ end }}
