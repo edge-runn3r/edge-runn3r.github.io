@@ -202,4 +202,9 @@ disableHugoGeneratorInject = false
   [[menu.main]]
     identifier = "posts"
     name       = "posts"
-    url        = "posts/"   
+    url        = "posts/"  
+
+  [[menu.main]]
+    name = "Password Gen"
+    url = "/password-generator/"
+    weight = 50
